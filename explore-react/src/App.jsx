@@ -12,9 +12,9 @@ function App() {
       <Device name = "Samsung" price = "800"> </Device>
       <Device name = "Google" price = "600"> </Device>
       <Device name="OnePlus" price="700"> </Device> */}
-      <Student name="Joy Shib" age = "30" Deposite = "10000" region = "Bangladeshi"> </Student>
-      
-      <Person> </Person>
+      <Student name="Joy Shib" age="30" Deposite="10000" region="Bangladeshi"/>
+      <Person />
+      <FreshersInfo />
     </>
   );
 }
@@ -29,7 +29,6 @@ function App() {
 //   );
 // }
 
-
 function Person() {
   const age = 25;
   const name = "Joy";
@@ -42,15 +41,31 @@ function Person() {
     isStudent: true,
     money: 202002,
   };
+
   return (
     <h3>
-      My name is {name} and my age is {age} and I earn approx {money}, and I
-      have some hobbies like {hobbies.join(", ")}
+      My name is {name}, my age is {age}, and I earn approx {money}. I have some
+      hobbies like {hobbies.join(", ")}.
     </h3>
   );
 }
 
-function MyInfo() {
-  
+function FreshersInfo() {
+  const name = "Sajjad";
+  const age = 22;
+  const region = "USA";
+  return (
+    <div>
+      <h1>Freshers Information:</h1>
+        <li>My name is: {name}</li>
+        <li>My age is: {age}</li>
+        <li>My region is: {region}</li>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui non quia
+        magni maxime odio. Maxime eveniet sunt ut maiores a!
+      </p>
+    </div>
+  );
 }
+
 export default App;

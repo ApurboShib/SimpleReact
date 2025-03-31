@@ -1,7 +1,7 @@
 function Student(props) {
     return (
         <div>
-            <h2>Here is the  Informations.</h2>
+            <h1>Here is the  Informations.</h1>
             <p>My name is : {props.name} </p>
             <p>Age is : {props.age} </p>
             <p>Bank Deposote is : {props.Deposite} </p>
